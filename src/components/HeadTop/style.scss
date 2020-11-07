@@ -1,0 +1,44 @@
+.HeadTopBlock {
+
+  .center {
+    & > * {
+      text-align: center;
+      font-family: PingFangTC;
+    }
+    .title {
+      font-size: 36px;   
+      color: #666666;
+      font-weight: 500;   
+      margin: 0 auto 20px;
+      @media screen and (max-width: 800px){
+        margin-bottom: 20px;
+      }
+    }
+      .website {
+        display: inline-block;
+        @media screen and (max-width: 800px){
+          display: block;
+        }
+      }
+    .second {
+      font-size: 24px;
+      font-weight: 300;
+      color: #999999;
+      margin: 0 auto 55px;
+    }
+    .email {
+      border-radius: 8px;
+      background-color: #465353;
+      margin: 0 auto 100px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 14px 0;
+      max-width: 360px;
+    }
+  }
+  .area {
+    height: 33px;
+    background-color: #465353;
+  }
+}

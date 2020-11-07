@@ -1,0 +1,85 @@
+.ExpBlock {
+  .myExp {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: #666666;
+    font-family: PingFangTC;
+  }
+  .Exp {
+    // margin-left: 65px;
+  }
+  .cpyAndEdu {
+    width: 100%;
+    color: #666;
+    font-size: 30px;
+    font-family: PingFangTC;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 auto;
+    font-family: PingFangTC;
+    color: #666;
+  }
+  .block {
+    display: flex;
+    .space {
+      width: 155px;
+    }
+    & > *:not(.space) {
+      flex: 1;
+      .Exp {
+        text-align: left;
+        position: relative;
+        &:not(:first-of-type) {
+          margin-top: 80px;
+        }
+
+        &:not(:last-of-type) {
+          &:after {
+            left: 50%;
+            content: "";
+            width: 10px;
+            height: 29px;
+            bottom: -28px;
+            display: block;
+            position: absolute;
+            background-color: #979797;
+            transform: translate(-50%, 100%);
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+  .exp {
+    .gradAndTitle,
+    .year,
+    .description {
+      color: #666;
+      font-size: 20px;
+      font-weight: 100;
+      font-family: PingFangTC;
+    }
+  }
+}
+// 手機版
+.ExpBlock {
+  .Exp {
+    @media screen and(max-width: 800px) {
+      margin: 20px 45px;
+    }
+    .exp {
+      .year {
+        @media screen and(max-width: 800px) {
+          display: block;
+          
+        }
+      }
+    }
+  }
+}
